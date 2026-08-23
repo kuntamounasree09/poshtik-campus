@@ -20,6 +20,36 @@
         <li>Paneer Protein Bowl</li>
         <li>Millet Protein Shake</li>
      </ul>
+     <h2>Order from your phone</h2>
+     <form>
+      <p>
+         <label for="customer">Your Name</label>
+         <input type="text" id="customer" name="customer">
+      </p>
+      <p>
+         <label for="phone">Phone</label>
+         <input type="tel" id="phone" name="phone">
+      </p>
+      <fieldset>
+         <legend>Choose your dish</legend>
+         <input type="radio" id="idli" name="dish" value="idli">
+         <label for="idli">Idli - 30rs</label><br>
+         <input type="radio" id="thali" name="dish" value="veg-thali">
+         <label for="thali">Veg Thali - 60rs</label><br>
+         <input type="radio" id="curd" name="ish" value="curd-rice">
+         <label for="curd">Curd Rice - 35rs</label><br>
+      </fieldset>
+      <p>
+         <label for="qty">How many plates?</label>
+         <input type="number" id="qty" name="quantity" min="1" max="10" value="1">
+
+      </p>
+      <p>
+         <label for="notes">Anything else?</label><br>
+         <textarea id="notes" name="notes" rows="3" cols="30"></textarea>
+      </p>
+      <button type="Submit">Place order</button>
+     </form>
      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
