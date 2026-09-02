@@ -1,6 +1,7 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Poshtik Campus — Menu</title>
@@ -9,71 +10,197 @@
 
 <body>
 
-    <h1>Our Menu</h1>
+    <header id="page-header">
+        <h1>Poshtik Campus Menu</h1>
+        <p>Healthy Food, Healthy Body, Healthy Mind</p>
+    </header>
 
-    <p>Ten dishes, every one of them poshtik.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+    </nav>
 
-    <ul>
-        <li>Jonna Rotte Wrap</li>
-        <li>Sajja Roti Wrap</li>
-        <li>Ragi Sangati Bowl</li>
-        <li>Ragi Idli Bowl</li>
-        <li>Pesarattu with Sprouts</li>
-        <li>Ulava Charu Protein Bowl</li>
-        <li>Gongura Sprouts Salad</li>
-        <li>Sprouts Moong Chilla</li>
-        <li>Paneer Protein Bowl</li>
-        <li>Millet Protein Shake</li>
-    </ul>
+    <main>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-    </ul>
+        <h2>Today's Healthy Ten</h2>
 
-    <h2>Order from your phone</h2>
+        <ul>
+            <li>
+                <h3>Jonna Rotte Wrap</h3>
+                <p>Telangana sorghum-flatbread wrap, loaded with crunchy vegetables.</p>
+                <p>Price: Rs. 60</p>
+            </li>
 
-    <form>
+            <li>
+                <h3>Sajja Roti Wrap</h3>
+                <p>Pearl-millet flatbread wrap — dense, warm, and filling.</p>
+                <p>Price: Rs. 60</p>
+            </li>
 
-        <p>
-            <label for="customer">Your name</label>
-            <input type="text" id="customer" name="customer">
-        </p>
+            <li>
+                <h3>Ragi Sangati Bowl</h3>
+                <p>Classic Telangana finger-millet mudde bowl, served hot.</p>
+                <p>Price: Rs. 55</p>
+            </li>
 
-        <p>
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone">
-        </p>
+            <li>
+                <h3>Ragi Idli Bowl</h3>
+                <p>Soft steamed finger-millet idlis with chutney.</p>
+                <p>Price: Rs. 50</p>
+            </li>
 
-        <fieldset>
+            <li>
+                <h3>Pesarattu with Sprouts</h3>
+                <p>Andhra green-gram dosa, topped with fresh sprouts.</p>
+                <p>Price: Rs. 55</p>
+            </li>
 
-            <legend>Choose your dish</legend>
+            <li>
+                <h3>Ulava Charu Protein Bowl</h3>
+                <p>Telangana horse-gram stew over a protein-rich grain bowl.</p>
+                <p>Price: Rs. 70</p>
+            </li>
 
-            <input type="radio" id="idli" name="dish" value="idli">
-            <label for="idli">Idli — ₹30</label><br>
+            <li>
+                <h3>Gongura Sprouts Salad</h3>
+                <p>Tangy Andhra gongura leaves tossed with mixed sprouts.</p>
+                <p>Price: Rs. 45</p>
+            </li>
 
-            <input type="radio" id="thali" name="dish" value="veg-thali">
-            <label for="thali">Veg Thali — ₹60</label><br>
+            <li>
+                <h3>Sprouts Moong Chilla</h3>
+                <p>Savoury moong pancake studded with sprouts.</p>
+                <p>Price: Rs. 50</p>
+            </li>
 
-            <input type="radio" id="curd" name="dish" value="curd-rice">
-            <label for="curd">Curd Rice — ₹35</label>
+            <li>
+                <h3>Paneer Protein Bowl</h3>
+                <p>Grilled paneer cubes over greens and grains.</p>
+                <p>Price: Rs. 80</p>
+            </li>
 
-        </fieldset>
+            <li>
+                <h3>Millet Protein Shake</h3>
+                <p>Cold millet-and-jaggery protein shake.</p>
+                <p>Price: Rs. 40</p>
+            </li>
+        </ul>
 
-        <p>
-            <label for="qty">How many plates?</label>
-            <input type="number" id="qty" name="quantity" min="1" max="10" value="1">
-        </p>
+        <h2>Order Here</h2>
 
-        <p>
-            <label for="notes">Anything else?</label>
-            <textarea id="notes" name="notes" rows="3" cols="30"></textarea>
-        </p>
+        <form>
 
-        <button type="submit">Place order</button>
+            <p>
+                <label for="cust-name">Your name</label>
+                <input
+                    type="text"
+                    id="cust-name"
+                    name="customer"
+                >
+            </p>
 
-    </form>
+            <p>
+                <label for="cust-phone">Phone number</label>
+                <input
+                    type="tel"
+                    id="cust-phone"
+                    name="phone"
+                >
+            </p>
+
+            <p>
+                <label for="dish">Pick your dish</label>
+
+                <select id="dish" name="dish">
+
+                    <option value="Jonna Rotte Wrap">
+                        Jonna Rotte Wrap
+                    </option>
+
+                    <option value="Sajja Roti Wrap">
+                        Sajja Roti Wrap
+                    </option>
+
+                    <option value="Ragi Sangati Bowl">
+                        Ragi Sangati Bowl
+                    </option>
+
+                    <option value="Ragi Idli Bowl">
+                        Ragi Idli Bowl
+                    </option>
+
+                    <option value="Pesarattu with Sprouts">
+                        Pesarattu with Sprouts
+                    </option>
+
+                    <option value="Ulava Charu Protein Bowl">
+                        Ulava Charu Protein Bowl
+                    </option>
+
+                    <option value="Gongura Sprouts Salad">
+                        Gongura Sprouts Salad
+                    </option>
+
+                    <option value="Sprouts Moong Chilla">
+                        Sprouts Moong Chilla
+                    </option>
+
+                    <option value="Paneer Protein Bowl">
+                        Paneer Protein Bowl
+                    </option>
+
+                    <option value="Millet Protein Shake">
+                        Millet Protein Shake
+                    </option>
+
+                </select>
+            </p>
+
+            <p>
+                <label for="qty">Quantity</label>
+                <input
+                    type="number"
+                    id="qty"
+                    name="quantity"
+                    min="1"
+                    max="10"
+                    value="1"
+                >
+            </p>
+
+            <p>
+                <label for="notes">Notes for the kitchen</label>
+                <textarea
+                    id="notes"
+                    name="notes"
+                    rows="3"
+                    cols="30"
+                ></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Place order</button>
+
+                <button
+                    type="button"
+                    id="check-order"
+                >
+                    Check my order
+                </button>
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Poshtik Campus · Vasavi College of Engineering</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
-</html>
 
+</html>
+```
